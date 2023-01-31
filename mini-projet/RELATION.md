@@ -1,10 +1,15 @@
-|  pages  |         | media (table de liaison) |        |  projects  |
+|  pages  |         |       media_pages        |        |   media    |
 | ------- |     =>  | ------------------------ |        | ---------- |
-|   id    |         |       pages_id           |        |            |
-|         |         |       projects_id        |   <=   |   id       |
+|   id    |         |       pages_id           |   <=   |            |
+|         |         |       media_id           |        |     id     |
 
 | profil |    =>    | media |
 | ------ |          | ----- |
+
+|  projects  |         |       media_project      |        |  projects  |
+| ---------- |     =>  | ------------------------ |        | ---------- |
+|     id     |         |       pages_id           |   <=   |            |
+|            |         |       projects_id        |        |     id     |
 
 
 -------------------------------------------------------------------------------------------------------------------
